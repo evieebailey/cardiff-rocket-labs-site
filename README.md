@@ -4,7 +4,13 @@ A standalone React, TypeScript and CSS site built with Vite.
 
 ## Local development
 
-Run `npm install`, then `npm run dev`. Run `npm run build` to type-check and create the deployable `dist` folder; `npm run preview` previews that build. Configure a static host to serve `index.html` for routes such as `/projects/draig`.
+Run `npm install`, then `npm run dev`. Run `npm run build` to type-check and create the deployable `docs` folder; `npm run preview` previews that build.
+
+## GitHub Pages
+
+Pages publishes the committed `docs/` folder from `main` at https://evieebailey.github.io/cardiff-rocket-labs-site/.
+After editing the source, run `npm run build`, then commit and push the source changes and regenerated `docs/` files together. The build includes photos and videos, adds `.nojekyll`, and creates entry files for direct visits to every current route. Add new routes to `scripts/prepare-pages.mjs` when adding pages.
+The Vite base path is configured in `vite.config.ts`; update it if the repository name or hosting URL changes. `npm run preview` previews the generated `docs/` build.
 
 ## Editing
 
