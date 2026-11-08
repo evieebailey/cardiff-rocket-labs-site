@@ -24,3 +24,25 @@
 .draig-page .draig-overview>img{max-height:700px}
 .draig-test-photo{padding-bottom:60px}
 .draig-test-photo img{height:auto;object-fit:contain}
+
+/* Text-only project links, without decorative icons. */
+.project-row{grid-template-columns:minmax(0,1fr) auto}@media(max-width:800px){.project-row{grid-template-columns:minmax(0,1fr)}}
+
+/* Compact Draig project layout. */
+.draig-page #page-content .page-head{min-height:0;padding:48px 4.2vw 12px}.draig-page .page-head h1{margin:0 0 18px}.draig-page .page-head>p{margin-bottom:12px}.draig-page .section{padding:32px 4.2vw}.draig-page .section-top{margin-bottom:24px}.draig-page .section-top h2{margin-top:0;font-size:clamp(30px,4vw,56px)}.draig-page .split{gap:36px;align-items:start}.draig-page .draig-overview>img{max-height:540px}.draig-page .copy p:first-child{margin-top:0}.draig-page .copy p:last-child{margin-bottom:0}.draig-page .narrow-copy,.draig-engine-copy{max-width:1100px;margin:0}.draig-page .project-list{margin-top:0}@media(max-width:800px){.draig-page #page-content .page-head{padding:32px 5vw 8px}.draig-page .section{padding:24px 5vw}.draig-page .split{gap:24px}}
+
+.draig-engine-copy{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:36px;align-items:center;max-width:none}.draig-engine-copy>img{height:auto;max-height:440px;object-fit:contain}@media(max-width:800px){.draig-engine-copy{grid-template-columns:1fr;gap:24px}}
+
+/* Founding committee photo and names. */
+.founding-committee{max-width:960px;margin-inline:auto}.founding-committee>img{height:auto;object-fit:contain}.committee-names{display:flex;justify-content:center;flex-wrap:wrap;gap:16px 48px;list-style:none;margin:24px 0 0;padding:0;text-align:center;font-family:'Space Grotesk',sans-serif;font-size:clamp(16px,2vw,24px)}.menu-links a{overflow-wrap:anywhere}.menu-links a small{flex-shrink:0}
+
+/* Keep the back row visible in the Hopper team photo. */
+.groups-grid .hopper-team-photo{object-position:50% 15%}
+
+.split>img.polaris-group-photo{height:auto;min-height:0;max-height:none;object-fit:contain}
+
+/* Bowser project photography. */
+.bowser-opening-photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:center}.bowser-opening-photos img{height:auto;object-fit:contain}.bowser-introduction{margin-top:32px}.split>img.bowser-group-photo{height:auto;min-height:0;max-height:none;object-fit:contain}.bowser-engine-photo{overflow:hidden}.bowser-engine-photo img{width:111%;max-width:none;height:auto}@media(max-width:600px){.bowser-opening-photos{grid-template-columns:1fr;gap:16px}}
+
+/* Individual sponsor cards, using the available local logo sheet. */
+.sponsors-section>.copy{max-width:1000px}.sponsor-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin-top:48px}.sponsor-card{min-height:180px;padding:24px;display:grid;place-items:center;background:#fff;border-radius:4px}.sponsor-logo{width:100%;height:110px;background-image:url('/cardiff-rocket-labs-site/assets/Sponsors/Sponsors%20images.png');background-repeat:no-repeat;background-size:550px auto}.sponsor-logo-rs{width:65px;height:65px;background-size:646px auto;background-position:-348px -25px}.sponsor-logo-rak{width:160px;height:62px;background-size:1000px auto;background-position:-348px -176px}.sponsor-logo-easy-composites{width:180px;height:70px;background-size:900px auto;background-position:-234px -43px}.sponsor-logo-accu{width:160px;height:87px;background-size:1100px auto;background-position:-72px -66px}.sponsor-logo-apex{width:180px;height:50px;background-size:950px auto;background-position:-676px -57px}.sponsor-logo-ts-designs{width:190px;height:50px;background-size:810px auto;background-position:-35px -139px}.sponsor-logo-asg{width:170px;height:60px;background-size:1200px auto;background-position:-683px -214px}.sponsor-logo-pirtek{width:180px;height:92px;background-size:950px auto;background-position:-736px -163px}@media(max-width:1000px){.sponsor-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:500px){.sponsor-grid{gap:12px}.sponsor-card{padding:12px;min-height:140px}.sponsor-logo{transform:scale(.78)}}
